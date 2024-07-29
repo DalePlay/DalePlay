@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dale Play</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url("imagenes/Imagen6.jpg"); 
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.5);
+            background-position: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .content img {
+            max-width: 100px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .content p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .content .button {
+            background-color: #000; 
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+        .content .button:hover {
+            background-color: rgb(164, 171, 178);
+            color: #000;
+        }
+        .content .button img {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .input-container {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .input-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        .additional-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <img src="imagenes/Imagen2.jpg" alt="DalePlay Logo"> 
+            <h1>DalePlay</h1>
+            <p>Red Verificada</p>
+            <p>Envíanos un WhatsApp</p>
+            <p>Para crear tu cuenta</p>
+
+            <div class="input-container">
+                <label for="name">Escribinos tu nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre">
+            </div>
+            
+            <a href="https://wa.me/+5493562564910" class="button"> 
+                <img src="imagenes/Imagen7.png" alt="WhatsApp Icon" class="buttonimagen"> 
+                CREA TU CUENTA
+            </a>
+
+            <div class="additional-info">
+                <p>¡Cargamos fichas las 24 horas, todos los días!</p>
+                <p>Aceptamos transferencias de cualquier Banco/MercadoPago.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
