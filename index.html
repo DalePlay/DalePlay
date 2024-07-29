@@ -88,6 +88,14 @@
             font-size: 14px;
         }
     </style>
+    <script>
+        function sendMessage() {
+            var name = document.getElementById('name').value;
+            var message = "🍀¡Hola! Quiero mi usuario!!\n\n*Nombre:* " + name;
+            var url = "https://wa.me/+5493562564910?text=" + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
+    </script>
 </head>
 <body>
     <div class="background">
@@ -103,10 +111,10 @@
                 <input type="text" id="name" name="name" placeholder="Nombre">
             </div>
             
-            <a href="https://wa.me/+5493562564910" class="button"> 
+            <button class="button" onclick="sendMessage()">
                 <img src="imagenes/Imagen7.png" alt="WhatsApp Icon" class="buttonimagen"> 
                 CREA TU CUENTA
-            </a>
+            </button>
 
             <div class="additional-info">
                 <p>¡Cargamos fichas las 24 horas, todos los días!</p>
@@ -116,3 +124,5 @@
     </div>
 </body>
 </html>
+
+
